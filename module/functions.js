@@ -2,8 +2,7 @@
  function add(a, b) {
     return a + b;
 }
-
- function subtract(a, b) {
+function subtract(a, b) {
     return a - b;
 }
 
@@ -91,7 +90,23 @@ function processStudentNames(names) {
     };
 }
 
+//Function #1 == addPoints --> userPoints, pointsToBeDeducted --> newTotalPoints
 
+function addPoints(userPoints, pointsToBeAdded){
+    return userPoints + pointsToBeAdded
+}
+
+//Function #2 removePoints --> userPoints, pointsToBeDeducted --> newTotalPoints
+ 
+function addPoints(userPoints, pointsToBeDeducted){ 
+    return userPoints + pointsToBeDeducted
+}
+
+// Function #3 donatePoints --> donatingUser, revicingUser, amountPoints --> arryOf[donatingUserPoints]
+
+function donatePoints(donatingUser, revicingUser, amountPoints){
+    return [donatingUser - amountPoints, revicingUser + amountPoints]
+}
 
 module.exports = {
     add,
@@ -103,7 +118,9 @@ module.exports = {
     sortByLength,
     convertNamesToLengths,
     processStudentNames,
-    sortAlphabetically
+    sortAlphabetically,
+    donatePoints
 
 
 };
+
